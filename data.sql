@@ -26,3 +26,25 @@ insert into items (item_id,item_name,category,price) values
 ('It025','Blueberry Muffin','Bakery',100),
 ('It026','Croissant','Bakery',110),
 ('It027','Cheese Sandwich','Snack',130);
+
+insert into ingredients (ingredient_id,ingredient_name,unit) values
+('Ing01','Coffee Beans','grams'),
+('Ing02','Milk','ml'),
+('Ing03','Sugar','grams'),
+('Ing04','Cocoa Powder','grams'),
+('Ing05','Tea Leaves','grams'),
+('Ing06','Chocolate Syrup','ml'),
+('Ing07','Flour','grams'),
+('Ing08','Butter','grams'),
+('Ing09','Yeast','grams'),
+('Ing10','Salt','grams'),
+('Ing11','Vanilla Syrup','ml'),
+('Ing12','Caramel Syrup','ml'),
+('Ing13','Hazelnut Syrup','ml'),
+('Ing14','Ice Cubes','units'),
+('Ing15','Lemon','units'),
+('Ing16','Peach Syrup','ml'),
+('Ing17','Water','ml'),
+('Ing18','Cream','ml'),
+('Ing19','Cheese','grams'),
+('Ing20','Chocolate Chips','grams');
