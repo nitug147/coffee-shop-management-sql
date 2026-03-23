@@ -32,28 +32,6 @@ create table inventory (
     FOREIGN KEY (ingredient_id) REFERENCES ingredients(ingredient_id)
 );
 
-insert into inventory (inventory_id,ingredient_id,quantity_available,last_updated) values
-(1,'Ing01',6000,'2024-02-12'),
-(2,'Ing02',12000,'2024-02-12'),
-(3,'Ing03',4000,'2024-02-12'),
-(4,'Ing04',2000,'2024-02-12'),
-(5,'Ing05',1800,'2024-02-12'),
-(6,'Ing06',2500,'2024-02-12'),
-(7,'Ing07',5000,'2024-02-12'),
-(8,'Ing08',3000,'2024-02-12'),
-(9,'Ing09',1500,'2024-02-12'),
-(10,'Ing10',1000,'2024-02-12'),
-(11,'Ing11',1800,'2024-02-12'),
-(12,'Ing12',1700,'2024-02-12'),
-(13,'Ing13',1600,'2024-02-12'),
-(14,'Ing14',500,'2024-02-12'),
-(15,'Ing15',300,'2024-02-12'),
-(16,'Ing16',900,'2024-02-12'),
-(17,'Ing17',20000,'2024-02-12'),
-(18,'Ing18',2500,'2024-02-12'),
-(19,'Ing19',2200,'2024-02-12'),
-(20,'Ing20',1800,'2024-02-12');
-
 create table orders (
     row_id INT PRIMARY KEY,
     order_id VARCHAR(10) NOT NULL,
