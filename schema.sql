@@ -9,62 +9,11 @@ create table items (
     price DECIMAL(6,2)
 );
 
-insert into items (item_id,item_name,category,price) values
-('It001','Espresso','Coffee',120),
-('It002','Double Espresso','Coffee',150),
-('It003','Cappuccino','Coffee',150),
-('It004','Caffe Latte','Coffee',160),
-('It005','Vanilla Latte','Coffee',170),
-('It006','Caramel Latte','Coffee',180),
-('It007','Hazelnut Latte','Coffee',180),
-('It008','Americano','Coffee',140),
-('It009','Long Black','Coffee',145),
-('It010','Mocha','Coffee',170),
-('It011','Flat White','Coffee',160),
-('It012','Macchiato','Coffee',155),
-('It013','Affogato','Coffee',190),
-('It014','Cold Coffee','Cold Drink',180),
-('It015','Iced Latte','Cold Drink',190),
-('It016','Lemon Iced Tea','Cold Drink',140),
-('It017','Peach Iced Tea','Cold Drink',150),
-('It018','Green Tea','Tea',110),
-('It019','Masala Tea','Tea',100),
-('It020','Black Tea','Tea',90),
-('It021','Hot Chocolate','Beverage',200),
-('It022','White Hot Chocolate','Beverage',210),
-('It023','Chocolate Brownie','Bakery',120),
-('It024','Chocolate Muffin','Bakery',90),
-('It025','Blueberry Muffin','Bakery',100),
-('It026','Croissant','Bakery',110),
-('It027','Cheese Sandwich','Snack',130);
-
 create table ingredients (
     ingredient_id VARCHAR(10) PRIMARY KEY,
     ingredient_name VARCHAR(100),
     unit VARCHAR(20)
 );
-
-insert into ingredients (ingredient_id,ingredient_name,unit) values
-('Ing01','Coffee Beans','grams'),
-('Ing02','Milk','ml'),
-('Ing03','Sugar','grams'),
-('Ing04','Cocoa Powder','grams'),
-('Ing05','Tea Leaves','grams'),
-('Ing06','Chocolate Syrup','ml'),
-('Ing07','Flour','grams'),
-('Ing08','Butter','grams'),
-('Ing09','Yeast','grams'),
-('Ing10','Salt','grams'),
-('Ing11','Vanilla Syrup','ml'),
-('Ing12','Caramel Syrup','ml'),
-('Ing13','Hazelnut Syrup','ml'),
-('Ing14','Ice Cubes','units'),
-('Ing15','Lemon','units'),
-('Ing16','Peach Syrup','ml'),
-('Ing17','Water','ml'),
-('Ing18','Cream','ml'),
-('Ing19','Cheese','grams'),
-('Ing20','Chocolate Chips','grams');
 
 create table recipes (
     recipe_id INT PRIMARY KEY,
