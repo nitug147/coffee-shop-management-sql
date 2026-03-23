@@ -49,56 +49,12 @@ create table staff (
     salary INT
 );
 
-insert into staff (staff_id,staff_name,role,salary) values
-('S01','Aman','Barista',18000),
-('S02','Riya','Cashier',16000),
-('S03','Karan','Barista',18000),
-('S04','Neha','Manager',30000),
-('S05','Rohit','Cleaner',12000),
-('S06','Ankit','Barista',17500),
-('S07','Pooja','Cashier',16500),
-('S08','Rahul','Supervisor',22000),
-('S09','Sneha','Barista',18000),
-('S10','Vikas','Cleaner',12000),
-('S11','Arjun','Barista',18500),
-('S12','Nidhi','Cashier',16000),
-('S13','Manish','Supervisor',22500),
-('S14','Kriti','Barista',17800),
-('S15','Suresh','Cleaner',11500),
-('S16','Meena','Cashier',15800),
-('S17','Deepak','Barista',18200),
-('S18','Isha','Barista',17600),
-('S19','Yash','Cleaner',11800),
-('S20','Anjali','Manager',31000);
-
 create table shift (
     shift_id VARCHAR(10) PRIMARY KEY,
     shift_name VARCHAR(50),
     start_time TIME,
     end_time TIME
 );
-
-insert into shift (shift_id,shift_name,start_time,end_time) values
-('SH01','Morning','06:00','12:00'),
-('SH02','Afternoon','12:00','18:00'),
-('SH03','Evening','18:00','23:00'),
-('SH04','Night','23:00','06:00'),
-('SH05','Weekend Morning','07:00','13:00'),
-('SH06','Weekend Evening','14:00','22:00'),
-('SH07','Early Morning','05:00','11:00'),
-('SH08','Late Afternoon','15:00','21:00'),
-('SH09','Split Shift A','08:00','12:00'),
-('SH10','Split Shift B','16:00','20:00'),
-('SH11','Holiday Morning','07:00','13:00'),
-('SH12','Holiday Evening','14:00','22:00'),
-('SH13','Festival Morning','06:00','12:00'),
-('SH14','Festival Evening','16:00','22:00'),
-('SH15','Backup Shift','10:00','16:00'),
-('SH16','Overtime Morning','06:00','10:00'),
-('SH17','Overtime Evening','18:00','22:00'),
-('SH18','Training Shift','11:00','15:00'),
-('SH19','Maintenance Shift','22:00','02:00'),
-('SH20','Inventory Shift','04:00','08:00');
 
 create table rota (
     rota_id INT PRIMARY KEY,
@@ -108,33 +64,6 @@ create table rota (
     FOREIGN KEY (staff_id) REFERENCES staff(staff_id),
     FOREIGN KEY (shift_id) REFERENCES shift(shift_id)
 );
-
-insert into rota (rota_id,staff_id,shift_id,shift_date) values
-(1,'S01','SH01','2024-02-12'),
-(2,'S02','SH01','2024-02-12'),
-(3,'S03','SH02','2024-02-12'),
-(4,'S04','SH02','2024-02-12'),
-(5,'S05','SH03','2024-02-12'),
-(6,'S06','SH03','2024-02-12'),
-(7,'S07','SH04','2024-02-12'),
-(8,'S08','SH05','2024-02-12'),
-(9,'S09','SH06','2024-02-12'),
-(10,'S10','SH07','2024-02-12'),
-(11,'S11','SH08','2024-02-12'),
-(12,'S12','SH09','2024-02-12'),
-(13,'S13','SH10','2024-02-12'),
-(14,'S14','SH11','2024-02-12'),
-(15,'S15','SH12','2024-02-12'),
-(16,'S16','SH13','2024-02-12'),
-(17,'S17','SH14','2024-02-12'),
-(18,'S18','SH15','2024-02-12'),
-(19,'S19','SH16','2024-02-12'),
-(20,'S20','SH17','2024-02-12'),
-(21,'S01','SH18','2024-02-13'),
-(22,'S02','SH19','2024-02-13'),
-(23,'S03','SH20','2024-02-13'),
-(24,'S04','SH01','2024-02-13'),
-(25,'S05','SH02','2024-02-13');
 
 
 
