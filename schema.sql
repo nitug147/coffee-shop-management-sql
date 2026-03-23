@@ -24,33 +24,6 @@ create table recipes (
     FOREIGN KEY (ingredient_id) REFERENCES ingredients(ingredient_id)
 );
 
-insert into recipes (recipe_id,item_id,ingredient_id,quantity_required) values
-(1,'It001','Ing01',18),
-(2,'It002','Ing01',22),
-(3,'It003','Ing01',15),
-(4,'It003','Ing02',120),
-(5,'It004','Ing02',150),
-(6,'It005','Ing11',20),
-(7,'It006','Ing12',20),
-(8,'It007','Ing13',20),
-(9,'It008','Ing01',18),
-(10,'It009','Ing01',18),
-(11,'It010','Ing04',10),
-(12,'It011','Ing02',100),
-(13,'It012','Ing01',14),
-(14,'It013','Ing18',30),
-(15,'It014','Ing14',6),
-(16,'It015','Ing02',160),
-(17,'It016','Ing15',1),
-(18,'It017','Ing16',25),
-(19,'It018','Ing05',6),
-(20,'It019','Ing05',8),
-(21,'It020','Ing05',7),
-(22,'It021','Ing06',25),
-(23,'It022','Ing06',30),
-(24,'It024','Ing07',100),
-(25,'It027','Ing19',60);
-
 create table inventory (
     inventory_id INT PRIMARY KEY,
     ingredient_id VARCHAR(10),
